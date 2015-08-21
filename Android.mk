@@ -47,6 +47,4 @@ LOCAL_CPPFLAGS := $(LIBUNWIND_CPPFLAGS)
 LOCAL_MODULE_TARGET_ARCH := arm
 LOCAL_CXX_STL := none
 LOCAL_SANITIZE := never
-# src/Unwind/UnwindRegistersSave.S does not compile.
-LOCAL_CLANG_ASFLAGS += -no-integrated-as
 include $(BUILD_STATIC_LIBRARY)

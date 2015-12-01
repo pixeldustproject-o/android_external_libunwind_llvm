@@ -51,10 +51,10 @@ cc_library_static {
     cppflags: LIBUNWIND_CPPFLAGS,
     stl: "none",
     sanitize: ["never"],
-    disabled: true,
+    enabled: false,
     arch: {
         arm: {
-            disabled: false,
+            enabled: true,
         },
     },
 }

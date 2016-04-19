@@ -50,7 +50,9 @@ cc_library_static {
     local_include_dirs: LIBUNWIND_LOCAL_INCLUDES,
     cppflags: LIBUNWIND_CPPFLAGS,
     stl: "none",
-    sanitize: ["never"],
+    sanitize: {
+        never: true,
+    },
     enabled: false,
     arch: {
         arm: {

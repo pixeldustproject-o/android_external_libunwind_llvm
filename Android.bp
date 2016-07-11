@@ -45,6 +45,7 @@ LIBUNWIND_CPPFLAGS = [
 cc_library_static {
     name: "libunwind_llvm",
     clang: true,
+    sdk_version: "21",
     srcs: LIBUNWIND_SRC_FILES,
     include_dirs: LIBUNWIND_INCLUDES,
     local_include_dirs: LIBUNWIND_LOCAL_INCLUDES,

@@ -60,6 +60,7 @@ cc_library_static {
     arch: {
         arm: {
             enabled: true,
+            instruction_set: "arm",
         },
     },
 }
